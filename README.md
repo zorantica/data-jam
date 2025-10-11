@@ -1,5 +1,5 @@
 # Data JAM for Oracle (Journaling & Auditing Module)
-Data JAM is a powerful and highly configurable Oracle Database utility designed to automate the auditing of data changes. It simplifies data tracing and debugging by automatically generating scripts for the necessary database objects in order to capture a complete journal of all INSERT, UPDATE, and DELETE operations.
+Data JAM is a powerful and highly configurable Oracle Database utility designed to automate the auditing of data changes. It simplifies data changes tracing and debugging by automatically generating scripts for necessary database objects in order to capture a complete journal of all INSERT, UPDATE, and DELETE operations.
 
 ### Key Features:
 
