@@ -34,30 +34,22 @@ How?
 - 1.0.0 - Initial Release
 
 ## Installation instructions
+
 - Download the APEX application [from the install folder](https://github.com/zorantica/data-jam/blob/main/install/jam.sql).
-- Install the application in the desired workspace together with supporting objects.
-- Be sure the appropriate SELECT privileges are assigned to the database user where the JAM is installed (You may check the helper script for database user generation).
+- Install the application in the desired workspace together with supporting objects. *Ignore he fact the application wants to execute the upgrade of supporting objects even if it goes for a clean new install.*
+- Be sure the appropriate SELECT privileges are assigned to the database user where the JAM is installed (You may check the helper script for database user generation [located in the install folder](https://github.com/zorantica/data-jam/blob/main/install/user.sql)).
 
 ## How to use Data JAM
-*Procedure and Function descriptions with input and output parameters are located in package definition script.*
 
-## Demo
-A demo script together with demo package and APEX application is located under "demo" directory.
+### Locate and rename the project
 
-### Install the demo on Your environment
-First execute the script tables_and_data.sql, which will create demo tables and populate them with data.
+When a Data JAM is freshly installed there is a default project created. Project holds all necesarry settings and naming conventions.
 
-Then install demo database package ZT_SVG_DEMO (specification and body).
+You should rename it for Your purposes and apply changes.
 
-At the end import APEX demo aplication and run it.
+![alt text](img/Settings01.png)
 
-*Demo script and package should be installed in a database schema assigned to a workspace, where is the application imported.* 
+#### Select a monitored schema and assign a schema for auditing objects
 
-![demo/demo_01.png](demo/demo_01.png)
+On Project details page add a new schema for monitoring and assign a schema which is going to hold audit tables with audit data.
 
-### Demo App on apex.oracle.com
-[https://apex.oracle.com/pls/apex/f?p=ztsvg](https://apex.oracle.com/pls/apex/f?p=ztsvg)
-
-uid: demo
-
-pwd: demodemo
