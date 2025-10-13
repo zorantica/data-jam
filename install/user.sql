@@ -1,0 +1,63 @@
+SET DEFINE OFF;
+Prompt User jam;
+--
+-- jam  (User) 
+--
+CREATE USER JAM
+  IDENTIFIED BY JAM
+  DEFAULT TABLESPACE SYSTEM
+  TEMPORARY TABLESPACE TEMP
+/
+
+-- 2 Roles for jam 
+/
+Prompt Role CONNECT;
+--
+-- CONNECT  (Role) 
+--
+GRANT CONNECT TO jam
+/
+Prompt Role RESOURCE;
+--
+-- RESOURCE  (Role) 
+--
+GRANT RESOURCE TO jam
+/
+
+-- 9 System Privileges for jam 
+GRANT CREATE JOB TO jam
+/
+GRANT CREATE PROCEDURE TO jam
+/
+GRANT CREATE SEQUENCE TO jam
+/
+GRANT CREATE SESSION TO jam
+/
+GRANT CREATE SYNONYM TO jam
+/
+GRANT CREATE TABLE TO jam
+/
+GRANT CREATE TRIGGER TO jam
+/
+GRANT CREATE TYPE TO jam
+/
+GRANT CREATE VIEW TO jam
+/
+
+-- 1 Tablespace Quota for jam 
+ALTER USER jam QUOTA UNLIMITED ON SYSTEM
+/
+
+GRANT SELECT ON dba_tables TO JAM;
+
+GRANT SELECT ON dba_tab_columns TO JAM;
+
+GRANT SELECT ON dba_triggers TO JAM;
+
+GRANT SELECT ON dba_indexes TO JAM;
+
+GRANT SELECT ON dba_cons_columns TO JAM;
+
+GRANT SELECT ON dba_constraints TO JAM;
+
+GRANT SELECT ON dba_segments TO JAM;

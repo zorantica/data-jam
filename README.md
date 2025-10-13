@@ -1,11 +1,27 @@
 # Data JAM for Oracle (Journaling & Auditing Module)
-Data JAM is a powerful and highly configurable Oracle Database utility designed to automate the auditing of data changes. It simplifies data changes tracing and debugging by automatically generating scripts for necessary database objects in order to capture a complete journal of all INSERT, UPDATE, and DELETE operations.
 
-### Key Features:
+Data JAM is an Oracle Database product / utility designed to automate the auditing of DML data changes in desired database schemas and tables.
 
-**Automated Data Auditing:** Generates audit tables and triggers with a few clicks, creating a full-change journal.
+It's usage simplifies the tracing of data changes and provides answers on various questions like:
 
-**Built-in Audit Viewer:** A user-friendly GUI developed in Oracle APEX to easily query, filter, and analyze the journaled data changes.
+- Who changed the record in the table?
+- When?
+- What was changed?
+- From which application or client tool?
+- From which IP address?
+
+It can also assist developers during the debugging of the program logic and application behavior.
+
+How?
+
+- By generating scripts for necessary database objects in order to capture a complete audit trace of all INSERT, UPDATE, and DELETE operations.
+- By analysing actual data changes which occured in table records.
+
+## Key Features
+
+**Automated Data Auditing:** Generates audit tables and triggers with a few clicks, creating an auditing mechanism.
+
+**Built-in Audit Viewer:** A user-friendly GUI developed in Oracle APEX to easily query, filter, and analyze the audited data changes.
 
 **Flexible Standards:** Define your own naming standards for all journaling and audit objects.
 
@@ -14,17 +30,16 @@ Data JAM is a powerful and highly configurable Oracle Database utility designed 
 **Customizable Core:** Modify the audit trigger template to implement custom auditing logic.
 
 ## Changelog
+
 - 1.0.0 - Initial Release
 
 ## Installation instructions
-- download the APEX application from the install folder 
-- install the application in the desired workspace together with the supporting objects
-- be sure the appropriate privileges are assigned to the database user where the JAM is installed
+- Download the APEX application [from the install folder](https://github.com/zorantica/data-jam/blob/main/install/jam.sql).
+- Install the application in the desired workspace together with supporting objects.
+- Be sure the appropriate SELECT privileges are assigned to the database user where the JAM is installed (You may check the helper script for database user generation).
 
 ## How to use Data JAM
 *Procedure and Function descriptions with input and output parameters are located in package definition script.*
-
-
 
 ## Demo
 A demo script together with demo package and APEX application is located under "demo" directory.
