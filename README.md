@@ -55,6 +55,11 @@ Audit table can be located in a separate database schema (recommended) or in the
 
 ![alt text](img/login.png)
 
+### Requirements
+
+- Oracle APEX 19.2 or newer
+- Oracle database 11g or newer
+
 ## How to use Data JAM
 
 ### Locate and rename the Project
