@@ -14,7 +14,7 @@ It's usage simplifies the tracing of data changes and provides answers on variou
 
 It can also assist developers during the debugging of the program logic or during the data restauration.
 
-How?
+How can Data JAM do that?
 
 - By generating scripts for necessary database objects in order to capture a complete audit trace of all INSERT, UPDATE, and DELETE operations.
 - By analysing actual data changes which occured in table records.
