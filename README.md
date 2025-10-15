@@ -131,6 +131,16 @@ If You do not want to audit a table any more then simply set the switch to No, c
 
 Generated scripts are separated by the database schema in which they need to be executed. Some are related to monitored schema and others to audit objects schema.
 
+#### Mark Tables from the Text List
+
+There is an utility to mark multiple tables at once based on the text list provided.
+
+This is useful when You get a list of tables to audit from a product owner or some other user. There is no need to click and mark one table by one. Simply paste the list in the popup page and mark all the tables from the list.
+
+Beware - tables should belong to the selected schema, otherwise will be ignored.
+
+![alt text](img/mark_from_list.png)
+
 ### Display actual data changes
 
 Landing page in the application is used for displaying actual data changes.
